@@ -27,5 +27,9 @@ Ya en la fase de implementación, se declararon las variables con base a su func
  
 ![ActivitiesDiagram](https://user-images.githubusercontent.com/57844238/162121431-c0381733-2d8d-42d9-acf9-e68736e7769a.png)
 
+Ya con el diagrama de actividades se realizo la conexion de circuitos necesarios para el funcionamiento del proceso, para esto se usaron leds como indicadores del estado de los tanques y como indicador del funcionamiento de la mezcladora, servo motores para la simulacion de valvulas de salida de los tanques.
+
+El diagrama de conexiones representa el circuito implementado fisicamente
 
 
+![Diagrama del circuito](https://user-images.githubusercontent.com/57844238/162249726-601db0ca-1b0a-4bf0-9ff4-23c0863aaf7a.png)
