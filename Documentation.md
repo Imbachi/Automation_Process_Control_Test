@@ -23,7 +23,19 @@ Y para controlar las iteraciones necesarias por la compañía para lograr su met
 
 ## Implementación: 
 
-Ya en la fase de implementación, se declararon las variables con base a su funcionalidad, como se encuentra documentado en el código en CODESYS. Se determinó que las variables de entrada correspondían a los sensores ubicados en los tanques de recolección de los líquidos, y las salidas hacían referencia a las válvulas que habilitaban el flujo de líquido de estos tanques. Se asociaron los temporizadores a los tiempos de acción de cada tarea.
+Ya en la fase de implementación, se declararon las variables con base a su funcionalidad, como se encuentra documentado en el código en CODESYS. 
+
+```bash
+VAR_GLOBAL
+	Start: BOOL; // Start the system
+	Stop: BOOL; // Emergency Stop 
+	
+	// Inputs
+	I00_WP1: BOOL; // WaterPump 1 
+	I01_WP2: BOOL; // Waterpump 2
+```
+
+Se determinó que las variables de entrada correspondían a los sensores ubicados en los tanques de recolección de los líquidos, y las salidas hacían referencia a las válvulas que habilitaban el flujo de líquido de estos tanques. Se asociaron los temporizadores a los tiempos de acción de cada tarea.
  
 ![ActivitiesDiagram](https://user-images.githubusercontent.com/57844238/162121431-c0381733-2d8d-42d9-acf9-e68736e7769a.png)
 
