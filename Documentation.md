@@ -90,6 +90,6 @@ El diagrama de conexiones representa el circuito implementado fisicamente
 
 ## Autores
 
-Brayan David Acosta Gomez
-Johan Nicolas Imbachi Niño
-Valentina Osorio Lopez
+Brayan David Acosta Gomez  
+Johan Nicolas Imbachi Niño  
+Valentina Osorio Lopez  
