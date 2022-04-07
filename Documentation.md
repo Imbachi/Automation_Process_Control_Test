@@ -33,6 +33,48 @@ VAR_GLOBAL
 	// Inputs
 	I00_WP1: BOOL; // WaterPump 1 
 	I01_WP2: BOOL; // Waterpump 2
+	I02_LS1: BOOL; // Status Level Sensor Tank 1 (Full)
+	I03_LS2: BOOL; // Status Level Sensor Tank 1 (Empty)
+	I04_LS3: BOOL; // Status Level Sensor Tank 2 (Full)
+	I05_LS4: BOOL; // Status Level Sensor Tank 2 (Empty)
+	I06_LS5: BOOL; // Status Level Sensor Tank 3 (Full)
+	I07_LS6: BOOL; // Status Level Sensor Tank 3 (Empty)
+	
+	//Outputs
+	Q00_Valve1: BOOL; // Valve Tank 1 
+	Q01_Valve2: BOOL; // Valve Tank 2 
+	Q02_Valve3: BOOL; // Valve Tank 3
+	Q03_Mix: BOOL; // Mixed Liquid 
+	
+	// Timers
+	DT0_Tank1: TON; // Delay time to fill tank 1 
+	DT1_Tank2: TON; // Delay time to fill tank 2 
+	DT2_Tank3: TON; // Delay time to fill tank 3 from tank 1
+	DT3_Tank3: TON; // Delay time to fill tank 3 from tank 2
+	DT4_Mixer: TON; // Delay time to mix the liquids (100 segs)
+	DT5_Output: TON; // Delay time to release the mix
+	DT6_Init: TON; // Delay time to initial conditions (LS2, LS4, LS6 are ON)
+	
+	// Internal Relays
+	IR1: BOOL; // Internal Relay
+	IR2: BOOL; // Internal Relay to mark mix process as completed
+	IR3: BOOL; // Internal Relay to count iterations 
+	Reset: BOOL; // Restart
+	
+	// Counter
+	CI: CTU; // Incremental Counter
+	
+	// Time
+	ET_DT0_Tank1: TIME; // Varible to show time on Visualization
+	ET_DT1_Tank2: TIME; // Varible to show time on Visualization
+	ET_DT2_Tank3: TIME; // Varible to show time on Visualization
+	ET_DT3_Tank3: TIME; // Varible to show time on Visualization
+	ET_DT4_Mixer: TIME; // Varible to show time on Visualization
+	ET_DT5_Output: TIME; // Varible to show time on Visualization
+	ET_DT6_Init: TIME;// Varible to show time on Visualization
+	ET_CI_Init: WORD;// Varible to show iteration on Visualization
+	
+END_VAR
 ```
 
 Se determinó que las variables de entrada correspondían a los sensores ubicados en los tanques de recolección de los líquidos, y las salidas hacían referencia a las válvulas que habilitaban el flujo de líquido de estos tanques. Se asociaron los temporizadores a los tiempos de acción de cada tarea.
