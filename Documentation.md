@@ -87,3 +87,9 @@ El diagrama de conexiones representa el circuito implementado fisicamente
 
 
 ![Diagrama del circuito](https://user-images.githubusercontent.com/57844238/162249726-601db0ca-1b0a-4bf0-9ff4-23c0863aaf7a.png)
+
+## Autores
+
+Brayan David Acosta Gomez
+Johan Nicolas Imbachi Niño
+Valentina Osorio Lopez
